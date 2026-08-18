@@ -21,6 +21,8 @@ pero no deducible) y *contradiction*.
 - Evaluación por *accuracy* y análisis de en qué clase se concentran los errores —
   *neutral* es sistemáticamente la más difícil, por estar entre las otras dos.
 
+![Matriz de confusión MNLI — la clase neutral concentra los errores](img/matriz_confusion_mnli.png)
+
 ## 2. Question Answering extractivo — SQuAD 2.0
 
 [`02_question_answering_squad2.ipynb`](02_question_answering_squad2.ipynb)
@@ -36,6 +38,8 @@ que diferencia SQuAD 2.0 de la versión 1.1 y donde fallan los modelos ingenuos.
 - Mapeo de las posiciones de respuesta de caracteres a *tokens*, gestionando el
   desplazamiento (`offset_mapping`) y las preguntas sin respuesta.
 - Comparación de *checkpoints* por métricas **Exact Match y F1**.
+
+![Distribución de longitudes de contexto en SQuAD 2.0 — el percentil 95 justifica MAX_LENGTH=140](img/histograma_longitudes_squad.png)
 
 ## Ejecución
 
